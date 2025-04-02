@@ -15,7 +15,6 @@
     padding: 20px;
     text-align: center;
     font-size: 24px;
-    font-family: Jeepers, ITC Jeepers Font;
  /* Centering styles */
  display: flex;
  justify-content: center; /* Centers horizontally */
@@ -23,8 +22,5 @@
  margin: 0; /* Removes default margin */
 }
 
-@font-face {
-    font-family: 'JMH Horror 3D';
-    src: url('fonts/JMH HORROR 3D.otf') format('opentype');
-}
+
   
