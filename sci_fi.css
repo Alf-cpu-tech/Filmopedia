@@ -8,10 +8,41 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.container {
+  display: grid;
+}
 
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  padding: 4px;
+  background-color: lightblue;
+}
+
+.container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+}
+#title {
+  grid-column: 1 / span 2;
+}
+#introduction {
+  grid-column: 1 / span 2;
+}
+/* I also used the tutorial on how to create a fixed menu
+https://www.w3schools.com/howto/howto_css_fixed_menu.asp   
+*/
+h1 {
+  margin-top: 60px;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topnav a {
@@ -30,7 +61,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #3929c0;
+  background-color: #0000ee;
   color: white;
 }
 
@@ -38,7 +69,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 682px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -46,14 +77,18 @@ body {
     float: right;
     display: block;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 682px) {
   .topnav.responsive {
-    position: relative;
+    position: fixed;
   }
-  .topnav.responsive .icon {
-    position: absolute;
+  .topnav.responsive.icon {
+    position: relative;
     right: 0;
     top: 0;
   }
