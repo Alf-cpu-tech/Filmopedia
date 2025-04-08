@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+  <title>Kids' Films</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner {
+      width: 100%;
+      height: 180px;
+      background: #ccc;
+    }
+
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .movie-card {
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      background: #bbb;
+    }
+
+    .movie-card .title {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .top-picks-box {
+      background-color: #bbb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 340px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .nav-bar {
+      background-color: #333;
+      padding: 0;
+    }
+
+    .nav-bar nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+    }
+
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 180px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    .genre-intro {
+      display: flex;
+      gap: 40px;
+      margin: 40px auto;
+      max-width: 1000px;
+      align-items: center;
+    }
+
+    .genre-left {
+      text-align: center;
+    }
+
+    .genre-heading {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .genre-image {
+      width: 30%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .genre-right {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="banner"></div>
+
+  <div class="nav-bar">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="horror.html">Horror</a></li>
+        <li><a href="sci-fi.html">Sci-Fi</a></li>
+        <li><a href="kids.html">Kids' Films</a></li>
+        <li><a href="stop-motion.html">Stop Motion</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="genre-intro">
+    <div class="genre-left">
+      <h2 class="genre-heading">Kids' Films</h2>
+      <img src="kids-films-images/popcorn.jpg" alt="Image of popcorn" class="genre-image" />
+    </div>
+    <div class="genre-right">
+      <p>
+        Immerse yourself in a world of imagination with our selection of family-friendly movies! <br>Grab your popcorn & teddy bears and get ready for a to escape to a new world of fun!
+      </p>
+    </div>
+  </section>
+  
+
+  <div class="movie-grid">
+    <div class="movie-card top-picks-box">
+      <p><strong>Our Top 5 Picks!</strong></p>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/gnomeo.html">
+        <img src="kids-films-images/gnomeo.png" alt="'Gnomeo and Juliet' movie poster" />
+        <div class="title">Gnomeo and Juliet</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/lego.html">
+        <img src="kids-films-images/lego.jpg" alt="'The LEGO Movie' movie poster" />
+        <div class="title">The LEGO Movie</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/mitchells.html">
+        <img src="kids-films-images/mitchells.jpg" alt="'Mitchells vs the Machines' movie poster"/>
+        <div class="title">Mitchells vs The Machines</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/shrek.html">
+        <img src="kids-films-images/shrek.jpg" alt="'Shrek' movie poster" />
+        <div class="title">Shrek</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/wall-e.html">
+        <img src="kids-films-images/wall-e.jpeg" alt="'WALL-E' movie poster" />
+        <div class="title">WALL-E</div></a>
+    </div>
+  </div>
+
+</body>
+</html>
