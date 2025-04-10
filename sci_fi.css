@@ -8,27 +8,31 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+div {
+  padding-left: 8px;
+}
 .container {
   display: grid;
 }
 
 .container {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: auto auto;
-  padding: 4px;
   background-color: lightblue;
 }
 
 .container > div {
-  background-color: #f1f1f1;
+  background-color: #33658a;
   border: 1px solid black;
-  padding: 10px;
   font-size: 30px;
 }
 #title {
   grid-column: 1 / span 2;
 }
 #introduction {
+  grid-column: 1 / span 2;
+}
+#genres_title {
   grid-column: 1 / span 2;
 }
 /* I also used the tutorial on how to create a fixed menu
