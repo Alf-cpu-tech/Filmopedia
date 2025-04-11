@@ -4,11 +4,7 @@ body {
   padding: 0;
 }
 
-.banner {
-  width: 100%;
-  height: 180px;
-  background: #ccc;
-}
+
 
 .nav-bar {
   background-color: #333;
@@ -50,12 +46,14 @@ body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
 }
+
 
 .numbertext {
   color: #f2f2f2;
@@ -109,10 +107,7 @@ the link from the html file and changing it to an image i donwloaded from this w
 https://www.flaticon.com/free-icon/menu_1828859?term=menu&page=1&position=1&origin=search&related_id=1828859#
 it requires atribution for it's liscense for personal and comercial use so i linked it at the bottom of each page.
 */
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 /* I also used the tutorial on how to create a fixed menu
 https://www.w3schools.com/howto/howto_css_fixed_menu.asp
@@ -176,4 +171,55 @@ https://www.w3schools.com/howto/howto_css_fixed_menu.asp
     display: block;
     text-align: left;
   }
+}
+
+.extra-section {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.placeholder-box {
+  border: 2px dashed #ccc;
+  background-color: #f9f9f9;
+  padding: 20px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.spotify-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.maps-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.banner {
+  background-color: #555555;
+  text-align: center; /* Center the image within the div */
+  padding: 65px; /* Add some padding around the image */
+}
+
+.banner img {
+  width: 50%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
 }

@@ -5,7 +5,10 @@
 </head>
 <body>
 
-<div class="banner"></div>
+<div class="banner">
+    <img src="../logo.png" alt="Banner Logo">
+</div>
+
 
 <nav>
     <div class="topnav" id="myTopnav">
@@ -66,36 +69,55 @@
 </div>
 <br>
 
-<script>
+<!-- Interactive and Embedded Section -->
+<div class="extra-section">
 
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
+    <div class="left-column">
+        <div class="placeholder-box">
+            <p><strong>Character & Actor Info:</strong> Hover area (JS will reveal actor details here)</p>
+        </div>
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+        <div class="placeholder-box">
+            <p><strong>Mini Quiz:</strong> Hover area (JS will reveal a short quiz)</p>
+        </div>
+    </div>
 
-    let slideIndex = 0;
-    showSlides();
+    <!-- Google Maps Location Section -->
+    <div class="maps-section">
+        <p><strong>The movie is set in Kentwood, Michigan:</strong></p>
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }
-</script>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12025.582202014956!2d-85.6019822!3d42.8697464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88184c37a8fa20a3%3A0x5188e7a68d14b165!2sKentwood%2C%20MI%2049581%2C%20USA!5e0!3m2!1sen!2suk!4v1712830500000!5m2!1sen!2suk"
+                width="80%"
+                height="300"
+                style="border:0; border-radius: 12px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+
+    <!-- Spotify Soundtrack Section -->
+        <div class="spotify-section">
+            <p><strong>Soundtrack for the movie:</strong></p>
+
+            <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/2Xk89K3RuEYHTaaHzd9IWR?utm_source=generator"
+                    width="80%"
+                    height="352"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="../kids-films-script.js" type="text/javascript"></script>
 
 
 </body>
