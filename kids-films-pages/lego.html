@@ -2,45 +2,6 @@
 <head>
     <title>The LEGO Movie</title>
     <link rel="stylesheet" href="../kids-films-style.css">
-    <style>
-
-        .movie-page-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 40px;
-            padding: 40px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .main-content {
-            flex: 2;
-        }
-
-        .side-panel {
-            flex: 1;
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .side-panel h3 {
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-
-        .side-panel ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .side-panel li {
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-
-    </style>
 </head>
 <body>
 
@@ -55,7 +16,7 @@
         <a href="../kids-films-index.html" class="active">Kids</a>
         <a href="#">Stop Motion</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <img src="menu.png" alt="hamburder_menu_icon" class="nav-image" />
+            <img src="../menu.png" alt="hamburder_menu_icon" class="nav-image" />
         </a>
     </div>
 </nav>
@@ -81,7 +42,28 @@
 </div>
 
 
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1/3</div>
+        <img src="../kids-films-images/lego1.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2/3</div>
+        <img src="../kids-films-images/lego2.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3/3</div>
+        <img src="../kids-films-images/lego3.jpg" style="width:50%">
+    </div>
+
+</div>
+<br>
+
 <script>
+
     function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
@@ -89,6 +71,25 @@
         } else {
             x.className = "topnav";
         }
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
     }
 </script>
 
