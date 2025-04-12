@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
   margin: 0;
   padding: 0;
 }
@@ -54,6 +54,13 @@ img {vertical-align: middle;}
   justify-content: center;
 }
 
+.mySlides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .numbertext {
   color: #f2f2f2;
@@ -78,7 +85,7 @@ img {vertical-align: middle;}
 
 .side-panel {
   flex: 1;
-  background-color: #f4f4f4;
+  background-color: #f4e2ab;
   padding: 20px;
   border-radius: 8px;
 }
@@ -117,7 +124,7 @@ https://www.w3schools.com/howto/howto_css_fixed_menu.asp
 }
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #1b3b22;
   position: fixed;
   top: 0;
   width: 100%;
@@ -139,7 +146,7 @@ https://www.w3schools.com/howto/howto_css_fixed_menu.asp
 }
 
 .topnav a.active {
-  background-color: #0000ee;
+  background-color: #9f8124;
   color: white;
 }
 
@@ -173,48 +180,17 @@ https://www.w3schools.com/howto/howto_css_fixed_menu.asp
   }
 }
 
-.extra-section {
-  display: flex;
-  gap: 40px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.left-column,
-.right-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.placeholder-box {
-  border: 2px dashed #ccc;
-  background-color: #f9f9f9;
-  padding: 20px;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
 .spotify-section {
   margin-top: 40px;
-  text-align: center;
 }
 
 .maps-section {
   margin-top: 40px;
-  text-align: center;
 }
 
 
 .banner {
-  background-color: #555555;
+  background-color: #3f5d46;
   text-align: center; /* Center the image within the div */
   padding: 65px; /* Add some padding around the image */
 }
@@ -223,3 +199,43 @@ https://www.w3schools.com/howto/howto_css_fixed_menu.asp
   width: 50%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
 }
+
+/* --- New styles for image hover boxes --- */
+
+
+
+.extra-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.left-column,
+.middle-column,
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hover-box {
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  height: 300px; /* or go bigger if you like */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
