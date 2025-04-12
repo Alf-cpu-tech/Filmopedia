@@ -24,7 +24,7 @@ div {
 .container > div {
   background-color: #33658a;
   border: 1px solid black;
-  font-size: 30px;
+  font-size: px;
 }
 #title {
   grid-column: 1 / span 2;
@@ -33,6 +33,9 @@ div {
   grid-column: 1 / span 2;
 }
 #genres_title {
+  grid-column: 1 / span 2;
+}
+#footer_a {
   grid-column: 1 / span 2;
 }
 /* I also used the tutorial on how to create a fixed menu
