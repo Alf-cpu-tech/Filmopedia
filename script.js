@@ -22,6 +22,10 @@ function setUp() {
   follow();
 }
 
+//this part is from a youtube video (https://www.youtube.com/watch?v=HjVVD8E84Kk)
+// i had to create the function above to strip the page of its contents and change the styling
+// it also adds a div into the blank page with an id tag so i can more easily select it in the
+// follow function
 var message =
   "Wake up Neo..... The Matrix has you.... Follow the white rabbit.... Knock, Knock, Neo.";
 var messageArray = message.split("");
@@ -34,5 +38,5 @@ function follow() {
     clearTimeout(loopTimer);
     return false;
   }
-  loopTimer = setTimeout("follow()", 70);
+  loopTimer = setTimeout("follow()", 230);
 }
