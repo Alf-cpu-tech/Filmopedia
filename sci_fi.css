@@ -15,10 +15,21 @@ img {
   max-width: 340px;
   max-height: 498px;
 }
+figure {
+  text-align: center;
+}
 div {
   padding-left: 8px;
 }
-
+button {
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,6 +40,10 @@ div {
   background-color: #33658a;
   border: 1px solid black;
   font-size: px;
+}
+
+#cast {
+  grid-column: 1 / span 2;
 }
 
 #sub_grid {
