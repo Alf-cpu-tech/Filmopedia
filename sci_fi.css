@@ -4,11 +4,12 @@ the link from the html file and changing it to an image i donwloaded from this w
 https://www.flaticon.com/free-icon/menu_1828859?term=menu&page=1&position=1&origin=search&related_id=1828859#
 it requires atribution for it's liscense for personal and comercial use so i linked it at the bottom of each page.
 */
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-img {
+.posters {
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -44,6 +45,10 @@ button {
 
 #easter_egg:hover {
   color: #39e43a;
+}
+
+#trailer {
+  grid-column: 1 / span 2;
 }
 
 #cast {
