@@ -1,4 +1,4 @@
-
+// FUNCTION FOR NAVIGATION BAR
 
     function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -8,6 +8,8 @@
     x.className = "topnav";
 }
 }
+
+// FUNCTIONS FOR IMAGE SLIDESHOW
 
     function currentSlide(n) {
     showSlides(slideIndex = n);
