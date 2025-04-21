@@ -8,6 +8,7 @@ it requires atribution for it's liscense for personal and comercial use so i lin
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
 }
 .posters {
   width: 100%;
@@ -39,13 +40,13 @@ button {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: lightblue;
+  background-color: #33658a;
 }
 
 .container > div {
   background-color: #33658a;
-  border: 1px solid black;
-  font-size: px;
+  /*border: 1px solid black;*/
+  font-size: 16px;
 }
 
 #footer_div {
