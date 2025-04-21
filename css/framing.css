@@ -16,6 +16,15 @@ img:hover{
     transform: scale(1.1);
 }
 
+body{
+    font-family: "MonospaceTypewriter", monospace;
+    background-color: #394032;
+    color: #8dab7f;
+    margin: 20px;
+    padding: 0;
+}
+
+
 .filmContainer{
     display: flex;
     flex-direction: column;
@@ -26,13 +35,6 @@ img:hover{
     padding: 0px;
 }
 
-body{
-    font-family: "MonospaceTypewriter", monospace;
-    background-color: #394032;
-    color: #8dab7f;
-    margin: 20px;
-    padding: 0;
-}
 
 .default{
     margin-bottom: 20px;
@@ -65,6 +67,12 @@ body{
 #filmshelf{
     background-color: #2b2b2b;
     border-radius: 10px;
+    text-align: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+#filmshelftitle{
+
+    text-align: center;
+    padding: 20px;
 }
