@@ -16,6 +16,11 @@ body {
   max-width: 340px;
   max-height: 498px;
 }
+
+.posters:hover {
+  border: 5px solid #0000ee;
+}
+
 figure {
   text-align: center;
 }
@@ -41,6 +46,10 @@ button {
   background-color: #33658a;
   border: 1px solid black;
   font-size: px;
+}
+
+#footer_div {
+  grid-column: 1 / span 2;
 }
 
 #easter_egg:hover {
