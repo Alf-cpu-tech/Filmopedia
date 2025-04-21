@@ -1,0 +1,70 @@
+@font-face{
+    font-family: "MonospaceTypewriter";
+    src: url("../fonts/monospace.ttf");
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    max-width: 480px;
+    max-height: 270px;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.filmContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+body{
+    font-family: "MonospaceTypewriter", monospace;
+    background-color: #394032;
+    color: #8dab7f;
+    margin: 20px;
+    padding: 0;
+}
+
+.default{
+    margin-bottom: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px
+}
+
+#header{
+    background-color: #394032;
+    color: #8dab7f;
+    padding: 10px;
+    text-align: center;
+}
+
+#overview{
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#filmshelf{
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
