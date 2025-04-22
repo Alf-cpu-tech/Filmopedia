@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "MonospaceTypewriter";
+    src: url("../fonts/monospace.ttf");
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    max-width: 480px;
+    max-height: 270px;
+}
+
+#img:hover{
+    transform: scale(1.1);
+    transform: transform 0.5s ease-in-out;
+}
+
+body{
+    font-family: "MonospaceTypewriter", monospace;
+    background-color: #E9B44C;
+    color: #1C110A;
+    margin: 20px;
+    padding: 0;
+}
+        
+
+.filmContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+
+.default{
+    margin-bottom: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px
+}
+
+#header{
+    padding: 10px;
+    text-align: center;
+}
+
+#overview{
+    background-color: #E4D6A7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#trailer{
+    background-color: #E4D6A7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    
+}
+
+#filmshelf{
+    background-color: #E4D6A7;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#filmshelftitle{
+
+    text-align: center;
+    padding: 20px;
+}
+
+.castframe {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #E4D6A7;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.actorlist img {
+    
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #444;
+}
+
+li.cast-frame {
+    list-style-type: none;
+}
+
+.actorlist li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
