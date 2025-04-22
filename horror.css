@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-gap: 10px; /* Adds spacing between grid items */
+}
+
+.item {
+    background-color: #ccc; /* Example styling for grid items */
+    padding: 20px;
+    text-align: center;
+}
+.header {
+    background-color: #fbfbfb; /* Dark background */
+    color: #691010; /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Jeepers, ITC Jeepers Font;
+ /* Centering styles */
+ display: flex;
+ justify-content: center; /* Centers horizontally */
+ align-items: center; /* Centers vertically */
+ margin: 0; /* Removes default margin */
+}
+
+@font-face {
+    font-family: 'JMH Horror 3D';
+    src: url('fonts/JMH HORROR 3D.otf') format('opentype');
+  }
+  
+

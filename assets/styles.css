@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'CustomFont'; /* The name of the font */
+    src: url('../fonts/CustomFont.ttf') format('truetype'); /* Path to the font file and its format */
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+}
+
+header {
+    font-family: 'CustomFont', sans-serif;
+}
