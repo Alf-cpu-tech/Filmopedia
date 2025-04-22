@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript quiz</title>
+<style>
+  body {
+      background-color: rgb(90, 7, 7);
+      font-family: Helvetica;
+  }
+
+  #main {
+      width: 80%;
+      max-width: 950px;
+      border: 1px gray solid;
+      margin: auto;
+      padding: 10px;
+      background-color: white;
+      border-radius: 10px;
+  }
+  
+  #header {
+            margin-top: 0;
+            border: 2px solid black;
+            padding: 5px;
+            height: 250px;
+            background: rgb(248, 248, 246);
+            background-image: url(_Vol.2Horror40_large.jpg);
+            color: rgb(253, 250, 250);
+        }
+
+        label {
+display: block;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+<h1>After watching all the films let's test your knowledge</h1>
+</div>
+<form id="form1">
+
+  <h3>What gift does Seok-woo buy for Su-an at the beginning of Train to Busan?</h3>
+  <label for="q1_a"><input type="radio" name="q1" value="0" id="q1_a" /> A doll</label>
+  <label for="q1_b"><input type="radio" name="q1" value="0" id="q1_b" /> A bicycle</label>
+  <label for="q1_c"><input type="radio" name="q1" value="10" id="q1_c" /> A video game console</label>
+  <label for="q1_d"><input type="radio" name="q1" value="0" id="q1_d" /> A smartphone</label>
+  
+  <h3>In Train to Busan how does the infection first spread?</h3>
+  <label for="q2_a"><input type="radio" name="q2" value="10" id="q2_a" /> A stowaway infected passenger</label>
+  <label for="q2_b"><input type="radio" name="q2" value="0" id="q2_b" /> A bitten train conductor</label>
+  <label for="q2_c"><input type="radio" name="q2" value="0" id="q2_c" /> Contaminated food</label>
+  <label for="q2_d"><input type="radio" name="q2" value="0" id="q2_d" /> An infected animal in the cargo area</label>
+  
+  <h3>What is the name of the secret procedure the Armitage family performs on their victims in Get Out?</h3>
+  <label for="q3_a"><input type="radio" name="q3" value="0" id="q3_a" /> The awakening</label>
+  <label for="q3_b"><input type="radio" name="q3" value="10" id="q3_b" /> The coagula</label>
+  <label for="q3_c"><input type="radio" name="q3" value="0" id="q3_c" /> The Transference</label>
+  <label for="q3_d"><input type="radio" name="q3" value="0" id="q3_d" /> The Ascension</label>
+  
+  <h3>Which phrase does Asami chillingly repeat when attacking Aoyama in Audition?</h3>
+  <label for="q4_a"><input type="radio" name="q4" value="0" id="q4_a" /> "Itai, itai..."</label>
+  <label for="q4_b"><input type="radio" name="q4" value="0" id="q4_b" /> "Omae wa mou shindeiru..."</label>
+  <label for="q4_c"><input type="radio" name="q4" value="0" id="q4_c" /> "Yamete kudasai..."</label>
+  <label for="q4_d"><input type="radio" name="q4" value="10" id="q4_d" /> "Kiri kiri kiri..."</label>
+  
+  <h3>In the Exorcist what is the name of the demon that possesses Regan?</h3>
+  <label for="q5_a"><input type="radio" name="q5" value="0" id="q5_a" /> Beelzebub</label>
+  <label for="q5_b"><input type="radio" name="q5" value="0" id="q5_b" /> Azazel</label>
+  <label for="q5_c"><input type="radio" name="q5" value="10" id="q5_c" /> Pazuzu</label>
+  <label for="q5_d"><input type="radio" name="q5" value="0" id="q5_d" /> Baphomet</label>
+  
+  <h3>What is the "Sunken Place" in Get Out?</h3>
+  <label for="q6_a"><input type="radio" name="q6" value="10" id="q6_a" /> A hypnotic state where Chris’s consciousness is trapped</label>
+  <label for="q6_b"><input type="radio" name="q6" value="0" id="q6_b" /> A real underground prison</label>
+  <label for="q6_c"><input type="radio" name="q6" value="0" id="q6_c" /> The secret basement of the Armitage house</label>
+  <label for="q6_d"><input type="radio" name="q6" value="0" id="q6_d" /> A dream Chris has during hypnosis</label>
+  
+  <h3>Which city do Seok-woo and Su-an depart from at the start of Train to Busan?</h3>
+  <label for="q7_a"><input type="radio" name="q7" value="0" id="q7_a" /> Busan</label>
+  <label for="q7_b"><input type="radio" name="q7" value="10" id="q7_b" /> Seoul</label>
+  <label for="q7_c"><input type="radio" name="q7" value="0" id="q7_c" /> Daegu</label>
+  <label for="q7_d"><input type="radio" name="q7" value="0" id="q7_d" /> Incheon</label>
+  
+  <h3>Which priest ultimately sacrifices himself to save Regan in the Exorcist?</h3>
+  <label for="q8_a"><input type="radio" name="q8" value="0" id="q8_a" /> Father Merrin</label>
+  <label for="q8_b"><input type="radio" name="q8" value="0" id="q8_b" /> Father Dyer</label>
+  <label for="q8_c"><input type="radio" name="q8" value="0" id="q8_c" /> Father Lamont</label>
+  <label for="q8_d"><input type="radio" name="q8" value="10" id="q8_d" /> Father Karras</label>
+  
+  <h3>In Get Out what does Missy Armitage use to hypnotize Chris?</h3>
+  <label for="q9_a"><input type="radio" name="q9" value="0" id="q9_a" /> A silver spoon</label>
+  <label for="q9_b"><input type="radio" name="q9" value="10" id="q9_b" /> A teacup and spoon</label>
+  <label for="q9_c"><input type="radio" name="q9" value="0" id="q9_c" /> A pocket watch</label>
+  <label for="q9_d"><input type="radio" name="q9" value="0" id="q9_d" /> A pocket watch</label>
+  
+  <h3>How does Aoyama meet Asami in Audition?</h3>
+  <label for="q10_a"><input type="radio" name="q10" value="0" id="q10_a" /> At a matchmaking event</label>
+  <label for="q10_b"><input type="radio" name="q10" value="0" id="q10_b" /> At a bar</label>
+  <label for="q10_c"><input type="radio" name="q10" value="0" id="q10_c" /> Through a dating agency</label>
+  <label for="q10_d"><input type="radio" name="q10" value="10" id="q10_d" /> Through a fake movie audition</label>
+  <button type="submit" value="Submit">Submit</button>
+  
+  </form>
+  
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div>
+<script>
+  document.getElementById("form1").onsubmit = function() {
+      let totalScore = 0;
+      const questions = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"];
+      questions.forEach(question => {
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+        if (selectedOption) {
+          totalScore += parseInt(selectedOption.value);
+        }
+      });
+      document.getElementById("grade").innerHTML = totalScore;
+      return false; // Prevent page refresh
+    };
+</script>
+    
+</body>
+</html>

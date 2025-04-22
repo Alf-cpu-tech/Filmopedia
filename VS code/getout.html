@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="horror.css"> <!-- Link to your existing CSS file -->
+    <title>Get Out - Filmopedia</title>
+    <style>
+h1 {
+    font-size: 50px; /* Adjust the font size to make it smaller */
+    margin-top: 20px; /* Add spacing above the header */
+    margin-bottom: 10px; /* Add spacing below the header */
+    text-align: center; /* Center-align the header */
+    color: #952020; /* Optional: Set the text color */
+}
+ .image-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+figure {
+    width: 320px; /* Slightly larger for better image size */
+    margin: 0;
+    text-align: center;
+}
+
+.movie-poster {
+    width: 400%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+    transform: scale(1.03);
+}
+
+figcaption {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+/* Adjust sizes only slightly for mobile – don’t shrink too much */
+@media (max-width: 768px) {
+    figure {
+        width: 350%; /* Slightly narrower, still fills the screen well */
+    }
+}
+
+@media (max-width: 480px) {
+    figure {
+        width: 95%; /* Make it almost full width on very small screens */
+        padding: 0 10px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavBar()">
+                <img src="menu.png" alt="hamburger_menu_icon" class="nav-image">
+            </a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <header class="header">
+            <h1>Get Out</h1>
+        </header>
+        <p>Get Out (2017) is a groundbreaking psychological horror-thriller directed by Jordan Peele. The film follows Chris, a Black man who visits his white girlfriend’s family estate, only to uncover a terrifying secret lurking beneath their seemingly welcoming facade. Blending horror with sharp social commentary, Get Out explores themes of racism, manipulation, and identity, creating an unsettling atmosphere that lingers long after the credits roll.</p>
+        <H2>Cast</H2>
+        <div class="image-row">
+            <figure>
+                <img src="images/danielkaluuya.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+                <figcaption>Daniel Kaluuya</figcaption>
+            </figure>
+            <figure>
+                <img src="images/allisonwilliams.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+                <figcaption>Allison Williams</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bradleywhitford.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+                <figcaption>Bradley Whitford</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Catherinekeener.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+                <figcaption>Catherine Keener</figcaption>
+            </figure>
+        </div>
+        <h2>Take a look at featured scenes captured from the film</h2>
+        <div class="image-row">
+                <img src="images/go1.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+                <img src="images/go2.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+                <img src="images/go3.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+                <img src="images/go4.jpg" alt="Train to Busan Movie Poster" class="movie-poster">
+
+        </div>
+    </div>
+
+    <footer>
+        <a id="atribution" href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open menu
+            icons created by Pixel perfect - Flaticon</a>
+        <script src="script.js" type="text/javascript"></script>
+    </footer>
+
+</body>
+</html>
