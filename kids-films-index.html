@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+  <title>Kids' Films</title>
+  <link rel="stylesheet" href="kids-films-style.css">
+  <style>
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .movie-card {
+      background-color: #f4e2ab;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .movie-card .title {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .top-picks-box {
+      background-color: #d0a933;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 340px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .genre-intro {
+      display: flex;
+      gap: 40px;
+      margin: 40px auto;
+      max-width: 1000px;
+      align-items: center;
+    }
+
+    .genre-left {
+      text-align: center;
+    }
+
+    .genre-heading {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .genre-image {
+      width: 30%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .genre-right {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="banner">
+  <img src="logo.png" alt="Banner Logo">
+</div>
+
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a id="Home" href="#Home">Home</a>
+      <a href="#">Horror</a>
+      <a href="#">Romantic Comedy</a>
+      <a href="science_fiction.html">Science Fiction</a>
+      <a href="kids-films-index.html" class="active">Kids</a>
+      <a href="#">Stop Motion</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="menu.png" alt="hamburder_menu_icon" class="nav-image" />
+      </a>
+    </div>
+  </nav>
+
+  <section class="genre-intro">
+    <div class="genre-left">
+      <h2 class="genre-heading">Kids' Films</h2>
+      <img src="kids-films-images/popcorn.jpg" alt="Image of popcorn" class="genre-image" />
+    </div>
+    <div class="genre-right">
+      <p>
+        Immerse yourself in a world of imagination with our selection of family-friendly movies! <br>Grab your popcorn & teddy bears and get ready for a to escape to a new world of fun!
+      </p>
+    </div>
+  </section>
+  
+
+  <div class="movie-grid">
+    <div class="movie-card top-picks-box">
+      <p><strong>Our Top 5 Picks!</strong></p>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/gnomeo.html">
+        <img src="kids-films-images/gnomeo.png" alt="'Gnomeo and Juliet' movie poster" />
+        <div class="title">Gnomeo and Juliet</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/lego.html">
+        <img src="kids-films-images/lego.jpg" alt="'The LEGO Movie' movie poster" />
+        <div class="title">The LEGO Movie</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/mitchells.html">
+        <img src="kids-films-images/mitchells.jpg" alt="'Mitchells vs the Machines' movie poster"/>
+        <div class="title">Mitchells vs The Machines</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/shrek.html">
+        <img src="kids-films-images/shrek.jpg" alt="'Shrek' movie poster" />
+        <div class="title">Shrek</div></a>
+    </div>
+    <div class="movie-card">
+      <a href="kids-films-pages/wall-e.html">
+        <img src="kids-films-images/wall-e.jpeg" alt="'WALL-E' movie poster" />
+        <div class="title">WALL-E</div></a>
+    </div>
+  </div>
+
+<script src="kids-films-script.js" type="text/javascript"></script>
+
+<footer>
+  <a id="atribution" href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open menu
+    icons created by Pixel perfect - Flaticon</a>
+</footer>
+
+</body>
+</html>
