@@ -9,11 +9,11 @@ img{
     object-fit: fill;
     max-width: 480px;
     max-height: 270px;
-    transition: transform 0.2s ease-in-out;
 }
 
-img:hover{
+#img:hover{
     transform: scale(1.1);
+    transform: transform 0.5s ease-in-out;
 }
 
 body{
@@ -62,6 +62,14 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
+#trailer{
+    background-color: #E4D6A7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    
+}
+
 #filmshelf{
     background-color: #E4D6A7;
     border-radius: 10px;
@@ -69,8 +77,39 @@ body{
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
+
 #filmshelftitle{
 
     text-align: center;
     padding: 20px;
 }
+
+.castframe {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #E4D6A7;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.actorlist img {
+    
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #444;
+}
+
+li.cast-frame {
+    list-style-type: none;
+}
+
+.actorlist li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
