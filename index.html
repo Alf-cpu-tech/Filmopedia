@@ -1,18 +1,36 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
+
 <head>
-    <link rel="stylesheet" href="base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="base.css" />
+    <title>Science Fiction</title>
 </head>
-<ul>
-    <li><a href="">Home</a></li>
-    <li><a href="">Science Fiction</a></li>
-    <li><a href="">Horror</a></li>
-    <li><a href="">Stop-Motion</a></li>
-    <li><a href="">Kids</a></li>
-  </ul>
 <body>
-    <header class="header">
-        <h1>Home</h1>
-    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a id="Home" href="#Home">Home</a>
+            <a href="#">Horror</a>
+            <a href="#">Romantic Comedy</a>
+            <a href="science_fiction.html" class="active">Science Fiction</a>
+            <a href="#">Kids</a>
+            <a href="#">Stop Motion</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="menu.png" alt="hamburder_menu_icon" class="nav-image" />
+            </a>
+        </div>
+    </nav>
+    <!--To keep the nav bar from overlapping on the title i added css to the H1 tag to give it a margin top of 60px if you have
+    better solution feel free to replace it-->
+    <h1 id="page_title">Filmopedia</h1>
+    <footer>
+        <a id="atribution" href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open menu
+            icons created by Pixel perfect - Flaticon</a>
+        <script src="script.js" type="text/javascript"></script>
+        <!--had an issue with linking the external javascript file and found a solution here
+    https://stackoverflow.com/questions/51261710/javascript-file-not-working-on-github-pages -->
+    </footer>
+    </div>
 </body>
+
 </html>
