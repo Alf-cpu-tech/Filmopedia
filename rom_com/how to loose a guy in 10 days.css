@@ -1,0 +1,55 @@
+body {
+    background-color: lightpink;
+}
+ 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-gap: 10px; /* Adds spacing between grid items */
+}
+
+.item {
+    background-color: lightpink; /* Example styling for grid items */
+    padding: 20px;
+    text-align: center;
+}
+.header {
+    background-color: lightpink; /* Dark background */
+    color: rgb(157, 19, 39); /* White text */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+ /* Centering styles */
+ display: flex;
+ justify-content: center; /* Centers horizontally */
+ align-items: center; /* Centers vertically */
+ margin: 0; /* Removes default margin */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 16px;
+    width: 200px;
+    background-color: hotpink;
+  }
+  li a {
+    display: block;
+    color: aliceblue;
+    padding: 8px 16px;
+    width: 100px;
+  }
+
+  /* change the link colour on hover */
+  li a:hover {
+    background-color: black;
+    color: rgb(254, 254, 255);
+  }
+   
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+p {display: block;
+    width: 100%;}
