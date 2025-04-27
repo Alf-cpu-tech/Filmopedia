@@ -1,211 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-      charset="UTF-8"
-    />
-    <link rel="stylesheet" href="sci_fi.css" />
-    <link rel="stylesheet" href="matrix.css" />
-    <title>The Matrix</title>
-  </head>
 
-  <body>
-    <nav>
-      <div class="topnav" id="myTopnav">
-        <a id="Home" href="index.html">Home</a>
-        <a href="#">Horror</a>
-        <a href="#">Romantic Comedy</a>
-        <a href="science_fiction.html" class="active">Science Fiction</a>
-        <a href="#">Kids</a>
-        <a href="#">Stop Motion</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <img src="menu.png" alt="hamburder_menu_icon" class="nav-image" />
-        </a>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="items" id="title">
-        <h1>The Matrix</h1>
-        <p><q>I know kung fu.</q> Neo</p>
-        <p><q>Show me.</q> Morpheus</p>
-      </div>
-      <div class="items" id="Summary">
-        <h2>Summary</h2>
-        <p>
-          A computer hacker known as Thomas Anderson alias Neo finds the truth
-          of this world by following the<button
-            id="easter_egg"
-            onclick="setUp()"
-          >
-            white rabbit</button
-          >into the rabbit hole and finds out that the world he thinks he knows
-          was wonderland all along.
-        </p>
-      </div>
-      <div class="items" id="movie_metadata">
-        <h2>Movie metadata</h2>
-        <p><b>Release date</b> : 1999</p>
-        <p><b>Rating</b> : 15</p>
-        <p><b>Runtime</b> : 2 hours 16 minutes</p>
-      </div>
-      <div class="items" id="trailer">
-        <h2>Trailer</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/vKQi3bBA1y8?si=6SELFQDXo1FDRmkm"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="items">
-        <h2>Directors</h2>
-        <div class="flex">
-          <div>
-            <figure>
-              <img
-                src="lana_wachowski_portrait.jpg"
-                alt="lana wachowski picture"
-              />
-              <figcaption>Lana Wachowski</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="lily_wachoski_portrait.jpg"
-                alt="Lilly wachowski picture"
-              />
-              <figcaption>Lilly Wachowski</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="items">
-        <h2>Writers</h2>
-        <div class="flex">
-          <div>
-            <figure>
-              <img
-                src="lana_wachowski_portrait.jpg"
-                alt="lana wachowski picture"
-              />
-              <figcaption>Lana Wachowski</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="lily_wachoski_portrait.jpg"
-                alt="Lilly wachowski picture"
-              />
-              <figcaption>Lilly Wachowski</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="items" id="cast">
-        <h2>Cast</h2>
-        <div class="flex">
-          <div>
-            <figure>
-              <img src="keanu_portrait.jpg" alt="Keanu Reeves picture" />
-              <figcaption>Keanu Reeves<br />Neo</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="laurence_fishburne_portrait.jpg"
-                alt="Laurence Fishburne picture"
-              />
-              <figcaption>Laurence Fishburne<br />Morpheus</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="carrie-anne_moss_portrait.jpg"
-                alt="Carrie-Anne Moss picture"
-              />
-              <figcaption>Carrie-Anne Moss<br />Trinity</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img src="hugo_weaving_portrait.jpg" alt="Hugo Weaving picture" />
-              <figcaption>Hugo Weaving<br />Agent Smith</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="gloria_foster_portrait.jpg"
-                alt="Gloria Foster picture"
-              />
-              <figcaption>Gloria Foster<br />Oracle</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="joe_pantoliano_portrait.jpg"
-                alt="Joe Pantoliano picture"
-              />
-              <figcaption>Joe Pantoliano<br />Cypher</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img src="marcus_chong_portrait.jpg" alt="Marcus Chong picture" />
-              <figcaption>Marcus Chong<br />Tank</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="julian_arahanga_portrait.jpg"
-                alt="Julian Arahanga picture"
-              />
-              <figcaption>Julian Arahanga<br />Apoc</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img src="matt_doran_portrait.jpg" alt="Matt Doran picture" />
-              <figcaption>Matt Doran<br />Mouse</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure>
-              <img
-                src="belinda_mcclory_portrait.jpg"
-                alt="Belinda McClory picture"
-              />
-              <figcaption>Belinda McClory<br />Switch</figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+  <link rel="stylesheet" href="sci_fi.css" />
+  <link rel="stylesheet" href="matrix.css" />
+  <title>The Matrix</title>
+</head>
 
-      <div id="footer_div">
-        <footer>
-          <a
-            id="atribution"
-            href="https://www.flaticon.com/free-icons/open-menu"
-            title="open menu icons"
-            >Open menu icons created by Pixel perfect - Flaticon</a
-          >
-          <script src="script_navbar_secret.js" type="text/javascript"></script>
-          <!--had an issue with linking the external javascript file and found a solution here
-    https://stackoverflow.com/questions/51261710/javascript-file-not-working-on-github-pages -->
-        </footer>
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a id="Home" href="index.html">Home</a>
+      <a href="VS Code/horror.html">Horror</a>
+      <a href="#">Romantic Comedy</a>
+      <a href="science_fiction.html" class="active">Science Fiction</a>
+      <a href="kids-films-index.html">Kids</a>
+      <a href="StopMotion.html">Stop Motion</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="menu.png" alt="hamburder_menu_icon" class="nav-image" />
+      </a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="items" id="title">
+      <h1>The Matrix</h1>
+      <p><q>I know kung fu.</q> Neo</p>
+      <p><q>Show me.</q> Morpheus</p>
+    </div>
+    <div class="items" id="Summary">
+      <h2>Summary</h2>
+      <p>
+        A computer hacker known as Thomas Anderson alias Neo finds the truth
+        of this world by following the<button id="easter_egg" onclick="setUp()">
+          white rabbit</button>into the rabbit hole and finds out that the world he thinks he knows
+        was wonderland all along.
+      </p>
+    </div>
+    <div class="items" id="movie_metadata">
+      <h2>Movie metadata</h2>
+      <p><b>Release date</b> : 1999</p>
+      <p><b>Rating</b> : 15</p>
+      <p><b>Runtime</b> : 2 hours 16 minutes</p>
+    </div>
+    <div class="items" id="trailer">
+      <h2>Trailer</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vKQi3bBA1y8?si=6SELFQDXo1FDRmkm"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="items">
+      <h2>Directors</h2>
+      <div class="flex">
+        <div>
+          <figure>
+            <img src="lana_wachowski_portrait.jpg" alt="lana wachowski picture" />
+            <figcaption>Lana Wachowski</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="lily_wachoski_portrait.jpg" alt="Lilly wachowski picture" />
+            <figcaption>Lilly Wachowski</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
-  </body>
+    <div class="items">
+      <h2>Writers</h2>
+      <div class="flex">
+        <div>
+          <figure>
+            <img src="lana_wachowski_portrait.jpg" alt="lana wachowski picture" />
+            <figcaption>Lana Wachowski</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="lily_wachoski_portrait.jpg" alt="Lilly wachowski picture" />
+            <figcaption>Lilly Wachowski</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="items" id="cast">
+      <h2>Cast</h2>
+      <div class="flex">
+        <div>
+          <figure>
+            <img src="keanu_portrait.jpg" alt="Keanu Reeves picture" />
+            <figcaption>Keanu Reeves<br />Neo</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="laurence_fishburne_portrait.jpg" alt="Laurence Fishburne picture" />
+            <figcaption>Laurence Fishburne<br />Morpheus</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="carrie-anne_moss_portrait.jpg" alt="Carrie-Anne Moss picture" />
+            <figcaption>Carrie-Anne Moss<br />Trinity</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="hugo_weaving_portrait.jpg" alt="Hugo Weaving picture" />
+            <figcaption>Hugo Weaving<br />Agent Smith</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="gloria_foster_portrait.jpg" alt="Gloria Foster picture" />
+            <figcaption>Gloria Foster<br />Oracle</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="joe_pantoliano_portrait.jpg" alt="Joe Pantoliano picture" />
+            <figcaption>Joe Pantoliano<br />Cypher</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="marcus_chong_portrait.jpg" alt="Marcus Chong picture" />
+            <figcaption>Marcus Chong<br />Tank</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="julian_arahanga_portrait.jpg" alt="Julian Arahanga picture" />
+            <figcaption>Julian Arahanga<br />Apoc</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="matt_doran_portrait.jpg" alt="Matt Doran picture" />
+            <figcaption>Matt Doran<br />Mouse</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="belinda_mcclory_portrait.jpg" alt="Belinda McClory picture" />
+            <figcaption>Belinda McClory<br />Switch</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer_div">
+      <footer>
+        <a id="atribution" href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open menu icons
+          created by Pixel perfect - Flaticon</a>
+        <script src="script_navbar_secret.js" type="text/javascript"></script>
+        <!--had an issue with linking the external javascript file and found a solution here
+    https://stackoverflow.com/questions/51261710/javascript-file-not-working-on-github-pages -->
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>
