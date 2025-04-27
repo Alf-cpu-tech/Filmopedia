@@ -1,62 +1,67 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="horror.css">
     <title>Train to Busan - Fimopedia</title>
 </head>
+
 <body>
 
     <nav>
         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#">Horror</a>
-        <a href="#">Romantic Comedy</a>
-        <a href="science_fiction.html" class="active">Science Fiction</a>
-        <a href="#">Kids</a>
-        <a href="#">Stop Motion</a>
+            <a href="../index.html" class="active">Home</a>
+            <a href="horror_index.html">Horror</a>
+            <a href="../rom_com/RomCom index.html">Romantic Comedy</a>
+            <a href="../science_fiction.html" class="active">Science Fiction</a>
+            <a href="../kids-films-index.html">Kids</a>
+            <a href="../StopMotion.html">Stop Motion</a>
             <a href="javascript:void(0);" class="icon" onclick="toggleNavBar()">
-             <img src="menu.png" alt="hamburder_menu_icon" class="nav-image"/> 
+                <img src="menu.png" alt="hamburder_menu_icon" class="nav-image" />
             </a>
         </div>
     </nav>
 
-<div class="main">
+    <div class="main">
         <header class="header">
             <h1>Horror</h1>
         </header>
-        <h1 id="page_title">Welcome, brave soul, to the horror genre where we take a chilling dive into the world of zombies, demonic entities and pure evil. </h1>
-    <p> Select your scare...but don't say we didn't warn you. </p>
-    <!-- Inside the main section -->
-<div class="main">
-    <div class="genre-links">
-        <a href="train_to_busan.html" class="horror-link">Train to Busan</a>
-        <a href="audition.html" class="horror-link">Audition</a>
-        <a href="getout.html" class="horror-link">Get Out</a>
-        <a href="exorcist.html" class="horror-link">Exorcist</a>
+        <h1 id="page_title">Welcome, brave soul, to the horror genre where we take a chilling dive into the world of
+            zombies, demonic entities and pure evil. </h1>
+        <p> Select your scare...but don't say we didn't warn you. </p>
+        <!-- Inside the main section -->
+        <div class="main">
+            <div class="genre-links">
+                <a href="train_to_busan.html" class="horror-link">Train to Busan</a>
+                <a href="audition.html" class="horror-link">Audition</a>
+                <a href="getout.html" class="horror-link">Get Out</a>
+                <a href="exorcist.html" class="horror-link">Exorcist</a>
+            </div>
+            <div class="photo-container">
+                <img src="images/traintobusan.jpg" alt="Train to Busan">
+                <img src="images/audition.jpg" alt="Audition">
+                <img src="images/go6.jpg" alt="Get Out">
+                <img src="images/exorcist.jpg" alt="Exorcist">
+            </div>
+        </div>
     </div>
-    <div class="photo-container">
-      <img src="images/traintobusan.jpg" alt="Train to Busan">
-      <img src="images/audition.jpg" alt="Audition">
-      <img src="images/go6.jpg" alt="Get Out">
-      <img src="images/exorcist.jpg" alt="Exorcist">
     </div>
-  </div>
-</div>
-</div>
 
     <!--To keep the nav bar from overlapping on the title i added css to the H1 tag to give it a margin top of 60px if you have
     better solution feel free to replace it-->
 
     <footer>
-        <a href="quiz.html" class="quiz-link">-> -> -> -> Take horror quiz <- <- <- <-         </a>
-        <!-- Quiz implementation inspired by https://codeactually.com/interactivequiz.html -->
-        <a id="atribution" href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open menu
-            icons created by Pixel perfect - Flaticon</a>
-        <script src="script.js" type="text/javascript"></script>
-       
-        <!--had an issue with linking the external javascript file and found a solution here
+        <a href="quiz.html" class="quiz-link">-> -> -> -> Take horror quiz <- <- <- <- </a>
+                <!-- Quiz implementation inspired by https://codeactually.com/interactivequiz.html -->
+                <a id="atribution" href="https://www.flaticon.com/free-icons/open-menu" title="open menu icons">Open
+                    menu
+                    icons created by Pixel perfect - Flaticon</a>
+                <script src="script.js" type="text/javascript"></script>
+
+                <!--had an issue with linking the external javascript file and found a solution here
     https://stackoverflow.com/questions/51261710/javascript-file-not-working-on-github-pages -->
     </footer>
 </body>
+
 </html>
