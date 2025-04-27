@@ -7,7 +7,7 @@
 body {
     font-family: creepster, Arial, sans-serif; /* Combine font-family declarations */
     background-color: rgb(160, 32, 32); /* Ensure consistent background color */
-    background-image: url(_Vol.2Horror40_large.jpg);
+    background-image: url(backgroundimage.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
